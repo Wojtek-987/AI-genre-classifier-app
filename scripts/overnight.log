@@ -1,0 +1,1258 @@
+
+=== BATCH START @ 2025-06-10 23:05:12.312819 ===
+
+--- RUN run_base @ 2025-06-10 23:05:12.312819 ---
+COMMAND: python scripts\train.py --mode train --features data/features --batch_size 16 --epochs 15 --model_dir models/run_base
+python: can't open file 'C:\\Users\\macie\\Desktop\\Projekty\\Inteligencja Obliczeniowa\\Music Genre Classifier\\scripts\\scripts\\train.py': [Errno 2] No such file or directory
+--- EXIT CODE: 2 ---
+
+--- RUN run_relu @ 2025-06-10 23:05:12.977381 ---
+COMMAND: python scripts\train.py --mode train --features data/features --batch_size 16 --epochs 15 --model_dir models/run_relu --activation relu
+python: can't open file 'C:\\Users\\macie\\Desktop\\Projekty\\Inteligencja Obliczeniowa\\Music Genre Classifier\\scripts\\scripts\\train.py': [Errno 2] No such file or directory
+--- EXIT CODE: 2 ---
+
+--- RUN run_tanh @ 2025-06-10 23:05:13.395640 ---
+COMMAND: python scripts\train.py --mode train --features data/features --batch_size 16 --epochs 15 --model_dir models/run_tanh --activation tanh
+python: can't open file 'C:\\Users\\macie\\Desktop\\Projekty\\Inteligencja Obliczeniowa\\Music Genre Classifier\\scripts\\scripts\\train.py': [Errno 2] No such file or directory
+--- EXIT CODE: 2 ---
+
+--- RUN run_elu @ 2025-06-10 23:05:13.648255 ---
+COMMAND: python scripts\train.py --mode train --features data/features --batch_size 16 --epochs 15 --model_dir models/run_elu --activation elu
+python: can't open file 'C:\\Users\\macie\\Desktop\\Projekty\\Inteligencja Obliczeniowa\\Music Genre Classifier\\scripts\\scripts\\train.py': [Errno 2] No such file or directory
+--- EXIT CODE: 2 ---
+
+--- RUN run_selu @ 2025-06-10 23:05:13.887003 ---
+COMMAND: python scripts\train.py --mode train --features data/features --batch_size 16 --epochs 15 --model_dir models/run_selu --activation selu
+python: can't open file 'C:\\Users\\macie\\Desktop\\Projekty\\Inteligencja Obliczeniowa\\Music Genre Classifier\\scripts\\scripts\\train.py': [Errno 2] No such file or directory
+--- EXIT CODE: 2 ---
+
+--- RUN run_gelu @ 2025-06-10 23:05:14.117967 ---
+COMMAND: python scripts\train.py --mode train --features data/features --batch_size 16 --epochs 15 --model_dir models/run_gelu --activation gelu
+python: can't open file 'C:\\Users\\macie\\Desktop\\Projekty\\Inteligencja Obliczeniowa\\Music Genre Classifier\\scripts\\scripts\\train.py': [Errno 2] No such file or directory
+--- EXIT CODE: 2 ---
+
+--- RUN run_bs8 @ 2025-06-10 23:05:14.339808 ---
+COMMAND: python scripts\train.py --mode train --features data/features --batch_size 8 --epochs 15 --model_dir models/run_bs8 --activation relu
+python: can't open file 'C:\\Users\\macie\\Desktop\\Projekty\\Inteligencja Obliczeniowa\\Music Genre Classifier\\scripts\\scripts\\train.py': [Errno 2] No such file or directory
+--- EXIT CODE: 2 ---
+
+--- RUN run_bs32 @ 2025-06-10 23:05:14.580984 ---
+COMMAND: python scripts\train.py --mode train --features data/features --batch_size 32 --epochs 15 --model_dir models/run_bs32 --activation relu
+python: can't open file 'C:\\Users\\macie\\Desktop\\Projekty\\Inteligencja Obliczeniowa\\Music Genre Classifier\\scripts\\scripts\\train.py': [Errno 2] No such file or directory
+--- EXIT CODE: 2 ---
+
+--- RUN run_smallFilt @ 2025-06-10 23:05:14.806475 ---
+COMMAND: python scripts\train.py --mode train --features data/features --batch_size 16 --epochs 15 --model_dir models/run_smallFilt --filters 16 32 64
+python: can't open file 'C:\\Users\\macie\\Desktop\\Projekty\\Inteligencja Obliczeniowa\\Music Genre Classifier\\scripts\\scripts\\train.py': [Errno 2] No such file or directory
+--- EXIT CODE: 2 ---
+
+--- RUN run_bigFilt @ 2025-06-10 23:05:15.030282 ---
+COMMAND: python scripts\train.py --mode train --features data/features --batch_size 16 --epochs 15 --model_dir models/run_bigFilt --filters 64 128 256
+python: can't open file 'C:\\Users\\macie\\Desktop\\Projekty\\Inteligencja Obliczeniowa\\Music Genre Classifier\\scripts\\scripts\\train.py': [Errno 2] No such file or directory
+--- EXIT CODE: 2 ---
+
+--- RUN run_dropHigh @ 2025-06-10 23:05:15.262214 ---
+COMMAND: python scripts\train.py --mode train --features data/features --batch_size 16 --epochs 15 --model_dir models/run_dropHigh --dropouts 0.3 0.3 0.3 0.6
+python: can't open file 'C:\\Users\\macie\\Desktop\\Projekty\\Inteligencja Obliczeniowa\\Music Genre Classifier\\scripts\\scripts\\train.py': [Errno 2] No such file or directory
+--- EXIT CODE: 2 ---
+
+=== BATCH END @ 2025-06-10 23:05:15.502854 ===
+
+=== BATCH START @ 2025-06-10 23:05:32.174832 ===
+
+--- RUN run_base @ 2025-06-10 23:05:32.174832 ---
+COMMAND: python train.py --mode train --features data/features --batch_size 16 --epochs 15 --model_dir models/run_base
+2025-06-10 23:05:32.490181: I tensorflow/core/util/port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2025-06-10 23:05:33.433245: I tensorflow/core/util/port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+Traceback (most recent call last):
+  File "C:\Users\macie\Desktop\Projekty\Inteligencja Obliczeniowa\Music Genre Classifier\scripts\train.py", line 182, in <module>
+    main()
+  File "C:\Users\macie\Desktop\Projekty\Inteligencja Obliczeniowa\Music Genre Classifier\scripts\train.py", line 106, in main
+    train_gen = MelDataset(args.features, genres,
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\macie\Desktop\Projekty\Inteligencja Obliczeniowa\Music Genre Classifier\scripts\data_generator.py", line 32, in __init__
+    raise ValueError(f"No .npy files found in {feature_dir}")
+ValueError: No .npy files found in data/features
+--- EXIT CODE: 1 ---
+
+--- RUN run_relu @ 2025-06-10 23:05:37.942566 ---
+COMMAND: python train.py --mode train --features data/features --batch_size 16 --epochs 15 --model_dir models/run_relu --activation relu
+2025-06-10 23:05:38.204852: I tensorflow/core/util/port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2025-06-10 23:05:38.805501: I tensorflow/core/util/port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+Traceback (most recent call last):
+  File "C:\Users\macie\Desktop\Projekty\Inteligencja Obliczeniowa\Music Genre Classifier\scripts\train.py", line 182, in <module>
+    main()
+  File "C:\Users\macie\Desktop\Projekty\Inteligencja Obliczeniowa\Music Genre Classifier\scripts\train.py", line 106, in main
+    train_gen = MelDataset(args.features, genres,
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\macie\Desktop\Projekty\Inteligencja Obliczeniowa\Music Genre Classifier\scripts\data_generator.py", line 32, in __init__
+    raise ValueError(f"No .npy files found in {feature_dir}")
+ValueError: No .npy files found in data/features
+--- EXIT CODE: 1 ---
+
+--- RUN run_tanh @ 2025-06-10 23:05:41.896578 ---
+COMMAND: python train.py --mode train --features data/features --batch_size 16 --epochs 15 --model_dir models/run_tanh --activation tanh
+2025-06-10 23:05:42.164335: I tensorflow/core/util/port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2025-06-10 23:05:42.775004: I tensorflow/core/util/port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+Traceback (most recent call last):
+  File "C:\Users\macie\Desktop\Projekty\Inteligencja Obliczeniowa\Music Genre Classifier\scripts\train.py", line 182, in <module>
+    main()
+  File "C:\Users\macie\Desktop\Projekty\Inteligencja Obliczeniowa\Music Genre Classifier\scripts\train.py", line 106, in main
+    train_gen = MelDataset(args.features, genres,
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\macie\Desktop\Projekty\Inteligencja Obliczeniowa\Music Genre Classifier\scripts\data_generator.py", line 32, in __init__
+    raise ValueError(f"No .npy files found in {feature_dir}")
+ValueError: No .npy files found in data/features
+--- EXIT CODE: 1 ---
+
+--- RUN run_elu @ 2025-06-10 23:05:45.896313 ---
+COMMAND: python train.py --mode train --features data/features --batch_size 16 --epochs 15 --model_dir models/run_elu --activation elu
+2025-06-10 23:05:46.160135: I tensorflow/core/util/port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2025-06-10 23:05:46.759548: I tensorflow/core/util/port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+Traceback (most recent call last):
+  File "C:\Users\macie\Desktop\Projekty\Inteligencja Obliczeniowa\Music Genre Classifier\scripts\train.py", line 182, in <module>
+    main()
+  File "C:\Users\macie\Desktop\Projekty\Inteligencja Obliczeniowa\Music Genre Classifier\scripts\train.py", line 106, in main
+    train_gen = MelDataset(args.features, genres,
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\macie\Desktop\Projekty\Inteligencja Obliczeniowa\Music Genre Classifier\scripts\data_generator.py", line 32, in __init__
+    raise ValueError(f"No .npy files found in {feature_dir}")
+ValueError: No .npy files found in data/features
+--- EXIT CODE: 1 ---
+
+--- RUN run_selu @ 2025-06-10 23:05:49.749119 ---
+COMMAND: python train.py --mode train --features data/features --batch_size 16 --epochs 15 --model_dir models/run_selu --activation selu
+2025-06-10 23:05:50.013202: I tensorflow/core/util/port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2025-06-10 23:05:50.620406: I tensorflow/core/util/port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+Traceback (most recent call last):
+  File "C:\Users\macie\Desktop\Projekty\Inteligencja Obliczeniowa\Music Genre Classifier\scripts\train.py", line 182, in <module>
+    main()
+  File "C:\Users\macie\Desktop\Projekty\Inteligencja Obliczeniowa\Music Genre Classifier\scripts\train.py", line 106, in main
+    train_gen = MelDataset(args.features, genres,
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\macie\Desktop\Projekty\Inteligencja Obliczeniowa\Music Genre Classifier\scripts\data_generator.py", line 32, in __init__
+    raise ValueError(f"No .npy files found in {feature_dir}")
+ValueError: No .npy files found in data/features
+--- EXIT CODE: 1 ---
+
+--- RUN run_gelu @ 2025-06-10 23:05:53.685668 ---
+COMMAND: python train.py --mode train --features data/features --batch_size 16 --epochs 15 --model_dir models/run_gelu --activation gelu
+2025-06-10 23:05:53.950907: I tensorflow/core/util/port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2025-06-10 23:05:54.560768: I tensorflow/core/util/port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+Traceback (most recent call last):
+  File "C:\Users\macie\Desktop\Projekty\Inteligencja Obliczeniowa\Music Genre Classifier\scripts\train.py", line 182, in <module>
+    main()
+  File "C:\Users\macie\Desktop\Projekty\Inteligencja Obliczeniowa\Music Genre Classifier\scripts\train.py", line 106, in main
+    train_gen = MelDataset(args.features, genres,
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\macie\Desktop\Projekty\Inteligencja Obliczeniowa\Music Genre Classifier\scripts\data_generator.py", line 32, in __init__
+    raise ValueError(f"No .npy files found in {feature_dir}")
+ValueError: No .npy files found in data/features
+--- EXIT CODE: 1 ---
+
+--- RUN run_bs8 @ 2025-06-10 23:05:57.595733 ---
+COMMAND: python train.py --mode train --features data/features --batch_size 8 --epochs 15 --model_dir models/run_bs8 --activation relu
+2025-06-10 23:05:57.858996: I tensorflow/core/util/port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2025-06-10 23:05:58.467893: I tensorflow/core/util/port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+Traceback (most recent call last):
+  File "C:\Users\macie\Desktop\Projekty\Inteligencja Obliczeniowa\Music Genre Classifier\scripts\train.py", line 182, in <module>
+    main()
+  File "C:\Users\macie\Desktop\Projekty\Inteligencja Obliczeniowa\Music Genre Classifier\scripts\train.py", line 106, in main
+    train_gen = MelDataset(args.features, genres,
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\macie\Desktop\Projekty\Inteligencja Obliczeniowa\Music Genre Classifier\scripts\data_generator.py", line 32, in __init__
+    raise ValueError(f"No .npy files found in {feature_dir}")
+ValueError: No .npy files found in data/features
+--- EXIT CODE: 1 ---
+
+--- RUN run_bs32 @ 2025-06-10 23:06:01.507961 ---
+COMMAND: python train.py --mode train --features data/features --batch_size 32 --epochs 15 --model_dir models/run_bs32 --activation relu
+2025-06-10 23:06:01.816058: I tensorflow/core/util/port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2025-06-10 23:06:02.525380: I tensorflow/core/util/port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+Traceback (most recent call last):
+  File "C:\Users\macie\Desktop\Projekty\Inteligencja Obliczeniowa\Music Genre Classifier\scripts\train.py", line 182, in <module>
+    main()
+  File "C:\Users\macie\Desktop\Projekty\Inteligencja Obliczeniowa\Music Genre Classifier\scripts\train.py", line 106, in main
+    train_gen = MelDataset(args.features, genres,
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\macie\Desktop\Projekty\Inteligencja Obliczeniowa\Music Genre Classifier\scripts\data_generator.py", line 32, in __init__
+    raise ValueError(f"No .npy files found in {feature_dir}")
+ValueError: No .npy files found in data/features
+--- EXIT CODE: 1 ---
+
+--- RUN run_smallFilt @ 2025-06-10 23:06:06.096851 ---
+COMMAND: python train.py --mode train --features data/features --batch_size 16 --epochs 15 --model_dir models/run_smallFilt --filters 16 32 64
+2025-06-10 23:06:06.445405: I tensorflow/core/util/port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2025-06-10 23:06:07.219778: I tensorflow/core/util/port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+Traceback (most recent call last):
+  File "C:\Users\macie\Desktop\Projekty\Inteligencja Obliczeniowa\Music Genre Classifier\scripts\train.py", line 182, in <module>
+    main()
+  File "C:\Users\macie\Desktop\Projekty\Inteligencja Obliczeniowa\Music Genre Classifier\scripts\train.py", line 106, in main
+    train_gen = MelDataset(args.features, genres,
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\macie\Desktop\Projekty\Inteligencja Obliczeniowa\Music Genre Classifier\scripts\data_generator.py", line 32, in __init__
+    raise ValueError(f"No .npy files found in {feature_dir}")
+ValueError: No .npy files found in data/features
+--- EXIT CODE: 1 ---
+
+--- RUN run_bigFilt @ 2025-06-10 23:06:10.856084 ---
+COMMAND: python train.py --mode train --features data/features --batch_size 16 --epochs 15 --model_dir models/run_bigFilt --filters 64 128 256
+2025-06-10 23:06:11.169037: I tensorflow/core/util/port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2025-06-10 23:06:11.881061: I tensorflow/core/util/port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+Traceback (most recent call last):
+  File "C:\Users\macie\Desktop\Projekty\Inteligencja Obliczeniowa\Music Genre Classifier\scripts\train.py", line 182, in <module>
+    main()
+  File "C:\Users\macie\Desktop\Projekty\Inteligencja Obliczeniowa\Music Genre Classifier\scripts\train.py", line 106, in main
+    train_gen = MelDataset(args.features, genres,
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\macie\Desktop\Projekty\Inteligencja Obliczeniowa\Music Genre Classifier\scripts\data_generator.py", line 32, in __init__
+    raise ValueError(f"No .npy files found in {feature_dir}")
+ValueError: No .npy files found in data/features
+--- EXIT CODE: 1 ---
+
+--- RUN run_dropHigh @ 2025-06-10 23:06:15.534093 ---
+COMMAND: python train.py --mode train --features data/features --batch_size 16 --epochs 15 --model_dir models/run_dropHigh --dropouts 0.3 0.3 0.3 0.6
+2025-06-10 23:06:15.868202: I tensorflow/core/util/port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2025-06-10 23:06:16.654812: I tensorflow/core/util/port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+Traceback (most recent call last):
+  File "C:\Users\macie\Desktop\Projekty\Inteligencja Obliczeniowa\Music Genre Classifier\scripts\train.py", line 182, in <module>
+    main()
+  File "C:\Users\macie\Desktop\Projekty\Inteligencja Obliczeniowa\Music Genre Classifier\scripts\train.py", line 106, in main
+    train_gen = MelDataset(args.features, genres,
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\macie\Desktop\Projekty\Inteligencja Obliczeniowa\Music Genre Classifier\scripts\data_generator.py", line 32, in __init__
+    raise ValueError(f"No .npy files found in {feature_dir}")
+ValueError: No .npy files found in data/features
+--- EXIT CODE: 1 ---
+
+=== BATCH END @ 2025-06-10 23:06:20.301970 ===
+
+=== BATCH START @ 2025-06-10 23:08:25.502021 ===
+
+--- RUN run_base @ 2025-06-10 23:08:25.502021 ---
+COMMAND: python train.py --mode train --features data/features --batch_size 16 --epochs 15 --model_dir models/run_base
+2025-06-10 23:08:25.765612: I tensorflow/core/util/port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2025-06-10 23:08:26.438956: I tensorflow/core/util/port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+
+=== BATCH START @ 2025-06-10 23:09:54.195293 ===
+
+--- RUN run_base @ 2025-06-10 23:09:54.195293 ---
+COMMAND: python train.py --mode train --features data/features --batch_size 16 --epochs 15 --model_dir models/run_base
+2025-06-10 23:09:54.520354: I tensorflow/core/util/port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2025-06-10 23:09:55.239844: I tensorflow/core/util/port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+⚠️ Warning: no .npy found under data/features for genres ['blues', 'classical', 'country', 'disco', 'hiphop', 'jazz', 'metal', 'pop', 'reggae', 'rock']
+⚠️ Warning: no .npy found under data/features for genres ['blues', 'classical', 'country', 'disco', 'hiphop', 'jazz', 'metal', 'pop', 'reggae', 'rock']
+Traceback (most recent call last):
+  File "C:\Users\macie\Desktop\Projekty\Inteligencja Obliczeniowa\Music Genre Classifier\scripts\train.py", line 182, in <module>
+    main()
+  File "C:\Users\macie\Desktop\Projekty\Inteligencja Obliczeniowa\Music Genre Classifier\scripts\train.py", line 114, in main
+    sample_X, _ = train_gen[0]
+                  ~~~~~~~~~^^^
+  File "C:\Users\macie\Desktop\Projekty\Inteligencja Obliczeniowa\Music Genre Classifier\scripts\data_generator.py", line 64, in __getitem__
+    return np.stack(X, 0), np.array(y)
+           ^^^^^^^^^^^^^^
+  File "C:\Users\macie\AppData\Local\Programs\Python\Python312\Lib\site-packages\numpy\_core\shape_base.py", line 453, in stack
+    raise ValueError('need at least one array to stack')
+ValueError: need at least one array to stack
+--- EXIT CODE: 1 ---
+
+--- RUN run_relu @ 2025-06-10 23:09:58.813467 ---
+COMMAND: python train.py --mode train --features data/features --batch_size 16 --epochs 15 --model_dir models/run_relu --activation relu
+2025-06-10 23:09:59.124741: I tensorflow/core/util/port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2025-06-10 23:09:59.835348: I tensorflow/core/util/port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+⚠️ Warning: no .npy found under data/features for genres ['blues', 'classical', 'country', 'disco', 'hiphop', 'jazz', 'metal', 'pop', 'reggae', 'rock']
+⚠️ Warning: no .npy found under data/features for genres ['blues', 'classical', 'country', 'disco', 'hiphop', 'jazz', 'metal', 'pop', 'reggae', 'rock']
+Traceback (most recent call last):
+  File "C:\Users\macie\Desktop\Projekty\Inteligencja Obliczeniowa\Music Genre Classifier\scripts\train.py", line 182, in <module>
+    main()
+  File "C:\Users\macie\Desktop\Projekty\Inteligencja Obliczeniowa\Music Genre Classifier\scripts\train.py", line 114, in main
+    sample_X, _ = train_gen[0]
+                  ~~~~~~~~~^^^
+  File "C:\Users\macie\Desktop\Projekty\Inteligencja Obliczeniowa\Music Genre Classifier\scripts\data_generator.py", line 64, in __getitem__
+    return np.stack(X, 0), np.array(y)
+           ^^^^^^^^^^^^^^
+  File "C:\Users\macie\AppData\Local\Programs\Python\Python312\Lib\site-packages\numpy\_core\shape_base.py", line 453, in stack
+    raise ValueError('need at least one array to stack')
+ValueError: need at least one array to stack
+--- EXIT CODE: 1 ---
+
+--- RUN run_tanh @ 2025-06-10 23:10:03.462748 ---
+COMMAND: python train.py --mode train --features data/features --batch_size 16 --epochs 15 --model_dir models/run_tanh --activation tanh
+2025-06-10 23:10:03.774496: I tensorflow/core/util/port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2025-06-10 23:10:04.500625: I tensorflow/core/util/port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+⚠️ Warning: no .npy found under data/features for genres ['blues', 'classical', 'country', 'disco', 'hiphop', 'jazz', 'metal', 'pop', 'reggae', 'rock']
+⚠️ Warning: no .npy found under data/features for genres ['blues', 'classical', 'country', 'disco', 'hiphop', 'jazz', 'metal', 'pop', 'reggae', 'rock']
+Traceback (most recent call last):
+  File "C:\Users\macie\Desktop\Projekty\Inteligencja Obliczeniowa\Music Genre Classifier\scripts\train.py", line 182, in <module>
+    main()
+  File "C:\Users\macie\Desktop\Projekty\Inteligencja Obliczeniowa\Music Genre Classifier\scripts\train.py", line 114, in main
+    sample_X, _ = train_gen[0]
+                  ~~~~~~~~~^^^
+  File "C:\Users\macie\Desktop\Projekty\Inteligencja Obliczeniowa\Music Genre Classifier\scripts\data_generator.py", line 64, in __getitem__
+    return np.stack(X, 0), np.array(y)
+           ^^^^^^^^^^^^^^
+  File "C:\Users\macie\AppData\Local\Programs\Python\Python312\Lib\site-packages\numpy\_core\shape_base.py", line 453, in stack
+    raise ValueError('need at least one array to stack')
+ValueError: need at least one array to stack
+--- EXIT CODE: 1 ---
+
+--- RUN run_elu @ 2025-06-10 23:10:08.173269 ---
+COMMAND: python train.py --mode train --features data/features --batch_size 16 --epochs 15 --model_dir models/run_elu --activation elu
+2025-06-10 23:10:08.499336: I tensorflow/core/util/port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2025-06-10 23:10:09.232444: I tensorflow/core/util/port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+⚠️ Warning: no .npy found under data/features for genres ['blues', 'classical', 'country', 'disco', 'hiphop', 'jazz', 'metal', 'pop', 'reggae', 'rock']
+⚠️ Warning: no .npy found under data/features for genres ['blues', 'classical', 'country', 'disco', 'hiphop', 'jazz', 'metal', 'pop', 'reggae', 'rock']
+Traceback (most recent call last):
+  File "C:\Users\macie\Desktop\Projekty\Inteligencja Obliczeniowa\Music Genre Classifier\scripts\train.py", line 182, in <module>
+    main()
+  File "C:\Users\macie\Desktop\Projekty\Inteligencja Obliczeniowa\Music Genre Classifier\scripts\train.py", line 114, in main
+    sample_X, _ = train_gen[0]
+                  ~~~~~~~~~^^^
+  File "C:\Users\macie\Desktop\Projekty\Inteligencja Obliczeniowa\Music Genre Classifier\scripts\data_generator.py", line 64, in __getitem__
+    return np.stack(X, 0), np.array(y)
+           ^^^^^^^^^^^^^^
+  File "C:\Users\macie\AppData\Local\Programs\Python\Python312\Lib\site-packages\numpy\_core\shape_base.py", line 453, in stack
+    raise ValueError('need at least one array to stack')
+ValueError: need at least one array to stack
+--- EXIT CODE: 1 ---
+
+--- RUN run_selu @ 2025-06-10 23:10:12.662109 ---
+COMMAND: python train.py --mode train --features data/features --batch_size 16 --epochs 15 --model_dir models/run_selu --activation selu
+2025-06-10 23:10:12.990442: I tensorflow/core/util/port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2025-06-10 23:10:13.635898: I tensorflow/core/util/port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+⚠️ Warning: no .npy found under data/features for genres ['blues', 'classical', 'country', 'disco', 'hiphop', 'jazz', 'metal', 'pop', 'reggae', 'rock']
+⚠️ Warning: no .npy found under data/features for genres ['blues', 'classical', 'country', 'disco', 'hiphop', 'jazz', 'metal', 'pop', 'reggae', 'rock']
+Traceback (most recent call last):
+  File "C:\Users\macie\Desktop\Projekty\Inteligencja Obliczeniowa\Music Genre Classifier\scripts\train.py", line 182, in <module>
+    main()
+  File "C:\Users\macie\Desktop\Projekty\Inteligencja Obliczeniowa\Music Genre Classifier\scripts\train.py", line 114, in main
+    sample_X, _ = train_gen[0]
+                  ~~~~~~~~~^^^
+  File "C:\Users\macie\Desktop\Projekty\Inteligencja Obliczeniowa\Music Genre Classifier\scripts\data_generator.py", line 64, in __getitem__
+    return np.stack(X, 0), np.array(y)
+           ^^^^^^^^^^^^^^
+  File "C:\Users\macie\AppData\Local\Programs\Python\Python312\Lib\site-packages\numpy\_core\shape_base.py", line 453, in stack
+    raise ValueError('need at least one array to stack')
+ValueError: need at least one array to stack
+--- EXIT CODE: 1 ---
+
+--- RUN run_gelu @ 2025-06-10 23:10:17.161517 ---
+COMMAND: python train.py --mode train --features data/features --batch_size 16 --epochs 15 --model_dir models/run_gelu --activation gelu
+2025-06-10 23:10:17.471403: I tensorflow/core/util/port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2025-06-10 23:10:18.182984: I tensorflow/core/util/port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+⚠️ Warning: no .npy found under data/features for genres ['blues', 'classical', 'country', 'disco', 'hiphop', 'jazz', 'metal', 'pop', 'reggae', 'rock']
+⚠️ Warning: no .npy found under data/features for genres ['blues', 'classical', 'country', 'disco', 'hiphop', 'jazz', 'metal', 'pop', 'reggae', 'rock']
+Traceback (most recent call last):
+  File "C:\Users\macie\Desktop\Projekty\Inteligencja Obliczeniowa\Music Genre Classifier\scripts\train.py", line 182, in <module>
+    main()
+  File "C:\Users\macie\Desktop\Projekty\Inteligencja Obliczeniowa\Music Genre Classifier\scripts\train.py", line 114, in main
+    sample_X, _ = train_gen[0]
+                  ~~~~~~~~~^^^
+  File "C:\Users\macie\Desktop\Projekty\Inteligencja Obliczeniowa\Music Genre Classifier\scripts\data_generator.py", line 64, in __getitem__
+    return np.stack(X, 0), np.array(y)
+           ^^^^^^^^^^^^^^
+  File "C:\Users\macie\AppData\Local\Programs\Python\Python312\Lib\site-packages\numpy\_core\shape_base.py", line 453, in stack
+    raise ValueError('need at least one array to stack')
+ValueError: need at least one array to stack
+--- EXIT CODE: 1 ---
+
+--- RUN run_bs8 @ 2025-06-10 23:10:21.866623 ---
+COMMAND: python train.py --mode train --features data/features --batch_size 8 --epochs 15 --model_dir models/run_bs8 --activation relu
+2025-06-10 23:10:22.183089: I tensorflow/core/util/port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2025-06-10 23:10:22.946307: I tensorflow/core/util/port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+⚠️ Warning: no .npy found under data/features for genres ['blues', 'classical', 'country', 'disco', 'hiphop', 'jazz', 'metal', 'pop', 'reggae', 'rock']
+⚠️ Warning: no .npy found under data/features for genres ['blues', 'classical', 'country', 'disco', 'hiphop', 'jazz', 'metal', 'pop', 'reggae', 'rock']
+Traceback (most recent call last):
+  File "C:\Users\macie\Desktop\Projekty\Inteligencja Obliczeniowa\Music Genre Classifier\scripts\train.py", line 182, in <module>
+    main()
+  File "C:\Users\macie\Desktop\Projekty\Inteligencja Obliczeniowa\Music Genre Classifier\scripts\train.py", line 114, in main
+    sample_X, _ = train_gen[0]
+                  ~~~~~~~~~^^^
+  File "C:\Users\macie\Desktop\Projekty\Inteligencja Obliczeniowa\Music Genre Classifier\scripts\data_generator.py", line 64, in __getitem__
+    return np.stack(X, 0), np.array(y)
+           ^^^^^^^^^^^^^^
+  File "C:\Users\macie\AppData\Local\Programs\Python\Python312\Lib\site-packages\numpy\_core\shape_base.py", line 453, in stack
+    raise ValueError('need at least one array to stack')
+ValueError: need at least one array to stack
+--- EXIT CODE: 1 ---
+
+--- RUN run_bs32 @ 2025-06-10 23:10:26.272129 ---
+COMMAND: python train.py --mode train --features data/features --batch_size 32 --epochs 15 --model_dir models/run_bs32 --activation relu
+2025-06-10 23:10:26.557358: I tensorflow/core/util/port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2025-06-10 23:10:27.192636: I tensorflow/core/util/port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+⚠️ Warning: no .npy found under data/features for genres ['blues', 'classical', 'country', 'disco', 'hiphop', 'jazz', 'metal', 'pop', 'reggae', 'rock']
+⚠️ Warning: no .npy found under data/features for genres ['blues', 'classical', 'country', 'disco', 'hiphop', 'jazz', 'metal', 'pop', 'reggae', 'rock']
+Traceback (most recent call last):
+  File "C:\Users\macie\Desktop\Projekty\Inteligencja Obliczeniowa\Music Genre Classifier\scripts\train.py", line 182, in <module>
+    main()
+  File "C:\Users\macie\Desktop\Projekty\Inteligencja Obliczeniowa\Music Genre Classifier\scripts\train.py", line 114, in main
+    sample_X, _ = train_gen[0]
+                  ~~~~~~~~~^^^
+  File "C:\Users\macie\Desktop\Projekty\Inteligencja Obliczeniowa\Music Genre Classifier\scripts\data_generator.py", line 64, in __getitem__
+    return np.stack(X, 0), np.array(y)
+           ^^^^^^^^^^^^^^
+  File "C:\Users\macie\AppData\Local\Programs\Python\Python312\Lib\site-packages\numpy\_core\shape_base.py", line 453, in stack
+    raise ValueError('need at least one array to stack')
+ValueError: need at least one array to stack
+--- EXIT CODE: 1 ---
+
+--- RUN run_smallFilt @ 2025-06-10 23:10:30.843476 ---
+COMMAND: python train.py --mode train --features data/features --batch_size 16 --epochs 15 --model_dir models/run_smallFilt --filters 16 32 64
+2025-06-10 23:10:31.162361: I tensorflow/core/util/port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2025-06-10 23:10:31.881804: I tensorflow/core/util/port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+⚠️ Warning: no .npy found under data/features for genres ['blues', 'classical', 'country', 'disco', 'hiphop', 'jazz', 'metal', 'pop', 'reggae', 'rock']
+⚠️ Warning: no .npy found under data/features for genres ['blues', 'classical', 'country', 'disco', 'hiphop', 'jazz', 'metal', 'pop', 'reggae', 'rock']
+Traceback (most recent call last):
+  File "C:\Users\macie\Desktop\Projekty\Inteligencja Obliczeniowa\Music Genre Classifier\scripts\train.py", line 182, in <module>
+    main()
+  File "C:\Users\macie\Desktop\Projekty\Inteligencja Obliczeniowa\Music Genre Classifier\scripts\train.py", line 114, in main
+    sample_X, _ = train_gen[0]
+                  ~~~~~~~~~^^^
+  File "C:\Users\macie\Desktop\Projekty\Inteligencja Obliczeniowa\Music Genre Classifier\scripts\data_generator.py", line 64, in __getitem__
+    return np.stack(X, 0), np.array(y)
+           ^^^^^^^^^^^^^^
+  File "C:\Users\macie\AppData\Local\Programs\Python\Python312\Lib\site-packages\numpy\_core\shape_base.py", line 453, in stack
+    raise ValueError('need at least one array to stack')
+ValueError: need at least one array to stack
+--- EXIT CODE: 1 ---
+
+--- RUN run_bigFilt @ 2025-06-10 23:10:35.618808 ---
+COMMAND: python train.py --mode train --features data/features --batch_size 16 --epochs 15 --model_dir models/run_bigFilt --filters 64 128 256
+2025-06-10 23:10:35.947358: I tensorflow/core/util/port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2025-06-10 23:10:36.673135: I tensorflow/core/util/port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+⚠️ Warning: no .npy found under data/features for genres ['blues', 'classical', 'country', 'disco', 'hiphop', 'jazz', 'metal', 'pop', 'reggae', 'rock']
+⚠️ Warning: no .npy found under data/features for genres ['blues', 'classical', 'country', 'disco', 'hiphop', 'jazz', 'metal', 'pop', 'reggae', 'rock']
+Traceback (most recent call last):
+  File "C:\Users\macie\Desktop\Projekty\Inteligencja Obliczeniowa\Music Genre Classifier\scripts\train.py", line 182, in <module>
+    main()
+  File "C:\Users\macie\Desktop\Projekty\Inteligencja Obliczeniowa\Music Genre Classifier\scripts\train.py", line 114, in main
+    sample_X, _ = train_gen[0]
+                  ~~~~~~~~~^^^
+  File "C:\Users\macie\Desktop\Projekty\Inteligencja Obliczeniowa\Music Genre Classifier\scripts\data_generator.py", line 64, in __getitem__
+    return np.stack(X, 0), np.array(y)
+           ^^^^^^^^^^^^^^
+  File "C:\Users\macie\AppData\Local\Programs\Python\Python312\Lib\site-packages\numpy\_core\shape_base.py", line 453, in stack
+    raise ValueError('need at least one array to stack')
+ValueError: need at least one array to stack
+--- EXIT CODE: 1 ---
+
+--- RUN run_dropHigh @ 2025-06-10 23:10:40.309728 ---
+COMMAND: python train.py --mode train --features data/features --batch_size 16 --epochs 15 --model_dir models/run_dropHigh --dropouts 0.3 0.3 0.3 0.6
+2025-06-10 23:10:40.626443: I tensorflow/core/util/port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2025-06-10 23:10:41.354727: I tensorflow/core/util/port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+⚠️ Warning: no .npy found under data/features for genres ['blues', 'classical', 'country', 'disco', 'hiphop', 'jazz', 'metal', 'pop', 'reggae', 'rock']
+⚠️ Warning: no .npy found under data/features for genres ['blues', 'classical', 'country', 'disco', 'hiphop', 'jazz', 'metal', 'pop', 'reggae', 'rock']
+Traceback (most recent call last):
+  File "C:\Users\macie\Desktop\Projekty\Inteligencja Obliczeniowa\Music Genre Classifier\scripts\train.py", line 182, in <module>
+    main()
+  File "C:\Users\macie\Desktop\Projekty\Inteligencja Obliczeniowa\Music Genre Classifier\scripts\train.py", line 114, in main
+    sample_X, _ = train_gen[0]
+                  ~~~~~~~~~^^^
+  File "C:\Users\macie\Desktop\Projekty\Inteligencja Obliczeniowa\Music Genre Classifier\scripts\data_generator.py", line 64, in __getitem__
+    return np.stack(X, 0), np.array(y)
+           ^^^^^^^^^^^^^^
+  File "C:\Users\macie\AppData\Local\Programs\Python\Python312\Lib\site-packages\numpy\_core\shape_base.py", line 453, in stack
+    raise ValueError('need at least one array to stack')
+ValueError: need at least one array to stack
+--- EXIT CODE: 1 ---
+
+=== BATCH END @ 2025-06-10 23:10:44.951631 ===
+
+=== BATCH START @ 2025-06-10 23:14:34.154296 ===
+
+--- RUN run_base @ 2025-06-10 23:14:34.154296 ---
+COMMAND: python train.py --mode train --features ../data/features --batch_size 16 --epochs 15 --model_dir ../models/run_base
+2025-06-10 23:14:34.478861: I tensorflow/core/util/port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2025-06-10 23:14:35.204275: I tensorflow/core/util/port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+C:\Users\macie\AppData\Local\Programs\Python\Python312\Lib\site-packages\keras\src\layers\convolutional\base_conv.py:107: UserWarning: Do not pass an `input_shape`/`input_dim` argument to a layer. When using Sequential models, prefer using an `Input(shape)` object as the first layer in the model instead.
+  super().__init__(activity_regularizer=activity_regularizer, **kwargs)
+2025-06-10 23:14:38.322003: I tensorflow/core/platform/cpu_feature_guard.cc:210] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: SSE3 SSE4.1 SSE4.2 AVX AVX2 AVX_VNNI FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+- TRAIN for 15 epochs | LR=0.0001 | act=relu
+C:\Users\macie\AppData\Local\Programs\Python\Python312\Lib\site-packages\keras\src\trainers\data_adapters\py_dataset_adapter.py:121: UserWarning: Your `PyDataset` class should call `super().__init__(**kwargs)` in its constructor. `**kwargs` can include `workers`, `use_multiprocessing`, `max_queue_size`. Do not pass these arguments to `fit()`, as they will be ignored.
+  self._warn_if_super_not_called()
+Epoch 1/15
+
+Epoch 1: val_accuracy improved from -inf to 0.13600, saving model to ../models/run_base\best_model.keras
+63/63 - 105s - 2s/step - accuracy: 0.4070 - loss: 1.9383 - val_accuracy: 0.1360 - val_loss: 4.1718
+Epoch 2/15
+
+Epoch 2: val_accuracy improved from 0.13600 to 0.25600, saving model to ../models/run_base\best_model.keras
+63/63 - 99s - 2s/step - accuracy: 0.7030 - loss: 0.9027 - val_accuracy: 0.2560 - val_loss: 3.1508
+Epoch 3/15
+
+Epoch 3: val_accuracy improved from 0.25600 to 0.28600, saving model to ../models/run_base\best_model.keras
+63/63 - 97s - 2s/step - accuracy: 0.8760 - loss: 0.4381 - val_accuracy: 0.2860 - val_loss: 3.6793
+Epoch 4/15
+
+Epoch 4: val_accuracy did not improve from 0.28600
+63/63 - 101s - 2s/step - accuracy: 0.9630 - loss: 0.1704 - val_accuracy: 0.2370 - val_loss: 2.8001
+Epoch 5/15
+
+Epoch 5: val_accuracy improved from 0.28600 to 0.29700, saving model to ../models/run_base\best_model.keras
+63/63 - 111s - 2s/step - accuracy: 0.9790 - loss: 0.1249 - val_accuracy: 0.2970 - val_loss: 1.9352
+Epoch 6/15
+
+Epoch 6: val_accuracy improved from 0.29700 to 0.39100, saving model to ../models/run_base\best_model.keras
+63/63 - 110s - 2s/step - accuracy: 0.9920 - loss: 0.0738 - val_accuracy: 0.3910 - val_loss: 1.6030
+Epoch 7/15
+
+Epoch 7: val_accuracy improved from 0.39100 to 0.55200, saving model to ../models/run_base\best_model.keras
+63/63 - 116s - 2s/step - accuracy: 0.9910 - loss: 0.0713 - val_accuracy: 0.5520 - val_loss: 1.0436
+Epoch 8/15
+
+Epoch 8: val_accuracy improved from 0.55200 to 0.66700, saving model to ../models/run_base\best_model.keras
+63/63 - 108s - 2s/step - accuracy: 0.9950 - loss: 0.0496 - val_accuracy: 0.6670 - val_loss: 0.8705
+Epoch 9/15
+
+Epoch 9: val_accuracy improved from 0.66700 to 0.79200, saving model to ../models/run_base\best_model.keras
+63/63 - 101s - 2s/step - accuracy: 0.9980 - loss: 0.0368 - val_accuracy: 0.7920 - val_loss: 0.6464
+Epoch 10/15
+
+Epoch 10: val_accuracy improved from 0.79200 to 0.90100, saving model to ../models/run_base\best_model.keras
+63/63 - 101s - 2s/step - accuracy: 0.9990 - loss: 0.0344 - val_accuracy: 0.9010 - val_loss: 0.3772
+Epoch 11/15
+
+Epoch 11: val_accuracy improved from 0.90100 to 0.94000, saving model to ../models/run_base\best_model.keras
+63/63 - 101s - 2s/step - accuracy: 0.9960 - loss: 0.0325 - val_accuracy: 0.9400 - val_loss: 0.2870
+Epoch 12/15
+
+Epoch 12: val_accuracy did not improve from 0.94000
+63/63 - 97s - 2s/step - accuracy: 0.9970 - loss: 0.0274 - val_accuracy: 0.8730 - val_loss: 0.3946
+Epoch 13/15
+
+Epoch 13: val_accuracy did not improve from 0.94000
+63/63 - 103s - 2s/step - accuracy: 0.9960 - loss: 0.0300 - val_accuracy: 0.8750 - val_loss: 0.4144
+Epoch 14/15
+
+Epoch 14: val_accuracy improved from 0.94000 to 0.96700, saving model to ../models/run_base\best_model.keras
+63/63 - 106s - 2s/step - accuracy: 0.9970 - loss: 0.0307 - val_accuracy: 0.9670 - val_loss: 0.2230
+Epoch 15/15
+
+Epoch 15: val_accuracy did not improve from 0.96700
+63/63 - 99s - 2s/step - accuracy: 0.9980 - loss: 0.0256 - val_accuracy: 0.9400 - val_loss: 0.2906
+Restoring model weights from the end of the best epoch: 14.
+Done. Final model saved at: ../models/run_base\model_final.keras
+--- EXIT CODE: 0 ---
+
+--- RUN run_relu @ 2025-06-10 23:40:43.570059 ---
+COMMAND: python train.py --mode train --features ../data/features --batch_size 16 --epochs 15 --model_dir ../models/run_relu --activation relu
+2025-06-10 23:40:44.905572: I tensorflow/core/util/port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2025-06-10 23:40:47.957312: I tensorflow/core/util/port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+C:\Users\macie\AppData\Local\Programs\Python\Python312\Lib\site-packages\keras\src\layers\convolutional\base_conv.py:107: UserWarning: Do not pass an `input_shape`/`input_dim` argument to a layer. When using Sequential models, prefer using an `Input(shape)` object as the first layer in the model instead.
+  super().__init__(activity_regularizer=activity_regularizer, **kwargs)
+2025-06-10 23:40:55.994283: I tensorflow/core/platform/cpu_feature_guard.cc:210] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: SSE3 SSE4.1 SSE4.2 AVX AVX2 AVX_VNNI FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+- TRAIN for 15 epochs | LR=0.0001 | act=relu
+C:\Users\macie\AppData\Local\Programs\Python\Python312\Lib\site-packages\keras\src\trainers\data_adapters\py_dataset_adapter.py:121: UserWarning: Your `PyDataset` class should call `super().__init__(**kwargs)` in its constructor. `**kwargs` can include `workers`, `use_multiprocessing`, `max_queue_size`. Do not pass these arguments to `fit()`, as they will be ignored.
+  self._warn_if_super_not_called()
+Epoch 1/15
+
+Epoch 1: val_accuracy improved from -inf to 0.16100, saving model to ../models/run_relu\best_model.keras
+63/63 - 109s - 2s/step - accuracy: 0.3870 - loss: 1.9327 - val_accuracy: 0.1610 - val_loss: 4.6081
+Epoch 2/15
+
+Epoch 2: val_accuracy improved from 0.16100 to 0.19600, saving model to ../models/run_relu\best_model.keras
+63/63 - 107s - 2s/step - accuracy: 0.6920 - loss: 0.9305 - val_accuracy: 0.1960 - val_loss: 5.4194
+Epoch 3/15
+
+Epoch 3: val_accuracy improved from 0.19600 to 0.30600, saving model to ../models/run_relu\best_model.keras
+63/63 - 103s - 2s/step - accuracy: 0.8990 - loss: 0.3605 - val_accuracy: 0.3060 - val_loss: 4.7607
+Epoch 4/15
+
+Epoch 4: val_accuracy improved from 0.30600 to 0.44800, saving model to ../models/run_relu\best_model.keras
+63/63 - 103s - 2s/step - accuracy: 0.9770 - loss: 0.1556 - val_accuracy: 0.4480 - val_loss: 2.6258
+Epoch 5/15
+
+Epoch 5: val_accuracy improved from 0.44800 to 0.55800, saving model to ../models/run_relu\best_model.keras
+63/63 - 106s - 2s/step - accuracy: 0.9840 - loss: 0.1120 - val_accuracy: 0.5580 - val_loss: 1.5295
+Epoch 6/15
+
+Epoch 6: val_accuracy improved from 0.55800 to 0.62600, saving model to ../models/run_relu\best_model.keras
+63/63 - 106s - 2s/step - accuracy: 0.9890 - loss: 0.0881 - val_accuracy: 0.6260 - val_loss: 1.2901
+Epoch 7/15
+
+Epoch 7: val_accuracy improved from 0.62600 to 0.67100, saving model to ../models/run_relu\best_model.keras
+63/63 - 106s - 2s/step - accuracy: 0.9960 - loss: 0.0635 - val_accuracy: 0.6710 - val_loss: 0.8783
+Epoch 8/15
+
+Epoch 8: val_accuracy improved from 0.67100 to 0.86900, saving model to ../models/run_relu\best_model.keras
+63/63 - 104s - 2s/step - accuracy: 0.9970 - loss: 0.0445 - val_accuracy: 0.8690 - val_loss: 0.4800
+Epoch 9/15
+
+Epoch 9: val_accuracy improved from 0.86900 to 0.89300, saving model to ../models/run_relu\best_model.keras
+63/63 - 104s - 2s/step - accuracy: 0.9970 - loss: 0.0518 - val_accuracy: 0.8930 - val_loss: 0.3844
+Epoch 10/15
+
+Epoch 10: val_accuracy improved from 0.89300 to 0.95900, saving model to ../models/run_relu\best_model.keras
+63/63 - 103s - 2s/step - accuracy: 0.9960 - loss: 0.0425 - val_accuracy: 0.9590 - val_loss: 0.2094
+Epoch 11/15
+
+Epoch 11: val_accuracy did not improve from 0.95900
+63/63 - 96s - 2s/step - accuracy: 0.9990 - loss: 0.0362 - val_accuracy: 0.9450 - val_loss: 0.2395
+Epoch 12/15
+
+Epoch 12: val_accuracy improved from 0.95900 to 0.97200, saving model to ../models/run_relu\best_model.keras
+63/63 - 103s - 2s/step - accuracy: 0.9990 - loss: 0.0372 - val_accuracy: 0.9720 - val_loss: 0.1918
+Epoch 13/15
+
+Epoch 13: val_accuracy did not improve from 0.97200
+63/63 - 98s - 2s/step - accuracy: 0.9990 - loss: 0.0274 - val_accuracy: 0.9450 - val_loss: 0.2337
+Epoch 14/15
+
+Epoch 14: val_accuracy did not improve from 0.97200
+63/63 - 101s - 2s/step - accuracy: 0.9980 - loss: 0.0296 - val_accuracy: 0.9480 - val_loss: 0.2583
+Epoch 15/15
+
+Epoch 15: val_accuracy did not improve from 0.97200
+63/63 - 98s - 2s/step - accuracy: 0.9980 - loss: 0.0290 - val_accuracy: 0.9630 - val_loss: 0.2315
+Restoring model weights from the end of the best epoch: 12.
+Done. Final model saved at: ../models/run_relu\model_final.keras
+--- EXIT CODE: 0 ---
+
+--- RUN run_tanh @ 2025-06-11 00:06:53.851947 ---
+COMMAND: python train.py --mode train --features ../data/features --batch_size 16 --epochs 15 --model_dir ../models/run_tanh --activation tanh
+2025-06-11 00:06:55.043900: I tensorflow/core/util/port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2025-06-11 00:06:57.362214: I tensorflow/core/util/port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+C:\Users\macie\AppData\Local\Programs\Python\Python312\Lib\site-packages\keras\src\layers\convolutional\base_conv.py:107: UserWarning: Do not pass an `input_shape`/`input_dim` argument to a layer. When using Sequential models, prefer using an `Input(shape)` object as the first layer in the model instead.
+  super().__init__(activity_regularizer=activity_regularizer, **kwargs)
+2025-06-11 00:07:04.445690: I tensorflow/core/platform/cpu_feature_guard.cc:210] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: SSE3 SSE4.1 SSE4.2 AVX AVX2 AVX_VNNI FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+- TRAIN for 15 epochs | LR=0.0001 | act=tanh
+C:\Users\macie\AppData\Local\Programs\Python\Python312\Lib\site-packages\keras\src\trainers\data_adapters\py_dataset_adapter.py:121: UserWarning: Your `PyDataset` class should call `super().__init__(**kwargs)` in its constructor. `**kwargs` can include `workers`, `use_multiprocessing`, `max_queue_size`. Do not pass these arguments to `fit()`, as they will be ignored.
+  self._warn_if_super_not_called()
+Epoch 1/15
+
+Epoch 1: val_accuracy improved from -inf to 0.16100, saving model to ../models/run_tanh\best_model.keras
+63/63 - 108s - 2s/step - accuracy: 0.0870 - loss: 2.3280 - val_accuracy: 0.1610 - val_loss: 2.4225
+Epoch 2/15
+
+Epoch 2: val_accuracy improved from 0.16100 to 0.17400, saving model to ../models/run_tanh\best_model.keras
+63/63 - 105s - 2s/step - accuracy: 0.0870 - loss: 2.3017 - val_accuracy: 0.1740 - val_loss: 2.3742
+Epoch 3/15
+
+Epoch 3: val_accuracy did not improve from 0.17400
+63/63 - 102s - 2s/step - accuracy: 0.0850 - loss: 2.3029 - val_accuracy: 0.1660 - val_loss: 2.3093
+Epoch 4/15
+
+Epoch 4: val_accuracy did not improve from 0.17400
+63/63 - 100s - 2s/step - accuracy: 0.0900 - loss: 2.3029 - val_accuracy: 0.1580 - val_loss: 2.2842
+Epoch 5/15
+
+Epoch 5: val_accuracy did not improve from 0.17400
+63/63 - 100s - 2s/step - accuracy: 0.1030 - loss: 2.3017 - val_accuracy: 0.1510 - val_loss: 2.2754
+Epoch 6/15
+
+Epoch 6: val_accuracy did not improve from 0.17400
+63/63 - 101s - 2s/step - accuracy: 0.1000 - loss: 2.3028 - val_accuracy: 0.1450 - val_loss: 2.2696
+Epoch 7/15
+
+Epoch 7: val_accuracy did not improve from 0.17400
+63/63 - 100s - 2s/step - accuracy: 0.0880 - loss: 2.3018 - val_accuracy: 0.1440 - val_loss: 2.2726
+Epoch 7: early stopping
+Restoring model weights from the end of the best epoch: 2.
+Done. Final model saved at: ../models/run_tanh\model_final.keras
+--- EXIT CODE: 0 ---
+
+--- RUN run_elu @ 2025-06-11 00:19:07.011457 ---
+COMMAND: python train.py --mode train --features ../data/features --batch_size 16 --epochs 15 --model_dir ../models/run_elu --activation elu
+2025-06-11 00:19:07.420276: I tensorflow/core/util/port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2025-06-11 00:19:08.362701: I tensorflow/core/util/port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+C:\Users\macie\AppData\Local\Programs\Python\Python312\Lib\site-packages\keras\src\layers\convolutional\base_conv.py:107: UserWarning: Do not pass an `input_shape`/`input_dim` argument to a layer. When using Sequential models, prefer using an `Input(shape)` object as the first layer in the model instead.
+  super().__init__(activity_regularizer=activity_regularizer, **kwargs)
+2025-06-11 00:19:13.164313: I tensorflow/core/platform/cpu_feature_guard.cc:210] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: SSE3 SSE4.1 SSE4.2 AVX AVX2 AVX_VNNI FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+- TRAIN for 15 epochs | LR=0.0001 | act=elu
+C:\Users\macie\AppData\Local\Programs\Python\Python312\Lib\site-packages\keras\src\trainers\data_adapters\py_dataset_adapter.py:121: UserWarning: Your `PyDataset` class should call `super().__init__(**kwargs)` in its constructor. `**kwargs` can include `workers`, `use_multiprocessing`, `max_queue_size`. Do not pass these arguments to `fit()`, as they will be ignored.
+  self._warn_if_super_not_called()
+Epoch 1/15
+
+Epoch 1: val_accuracy improved from -inf to 0.10200, saving model to ../models/run_elu\best_model.keras
+63/63 - 109s - 2s/step - accuracy: 0.3760 - loss: 2.0423 - val_accuracy: 0.1020 - val_loss: 7.6120
+Epoch 2/15
+
+Epoch 2: val_accuracy improved from 0.10200 to 0.26800, saving model to ../models/run_elu\best_model.keras
+63/63 - 104s - 2s/step - accuracy: 0.6700 - loss: 0.9887 - val_accuracy: 0.2680 - val_loss: 2.1656
+Epoch 3/15
+
+Epoch 3: val_accuracy improved from 0.26800 to 0.60600, saving model to ../models/run_elu\best_model.keras
+63/63 - 105s - 2s/step - accuracy: 0.8950 - loss: 0.3799 - val_accuracy: 0.6060 - val_loss: 1.4970
+Epoch 4/15
+
+Epoch 4: val_accuracy improved from 0.60600 to 0.66800, saving model to ../models/run_elu\best_model.keras
+63/63 - 105s - 2s/step - accuracy: 0.9590 - loss: 0.1753 - val_accuracy: 0.6680 - val_loss: 1.4100
+Epoch 5/15
+
+Epoch 5: val_accuracy improved from 0.66800 to 0.73900, saving model to ../models/run_elu\best_model.keras
+63/63 - 106s - 2s/step - accuracy: 0.9870 - loss: 0.0957 - val_accuracy: 0.7390 - val_loss: 0.8805
+Epoch 6/15
+
+Epoch 6: val_accuracy improved from 0.73900 to 0.79800, saving model to ../models/run_elu\best_model.keras
+63/63 - 105s - 2s/step - accuracy: 0.9860 - loss: 0.0760 - val_accuracy: 0.7980 - val_loss: 0.6621
+Epoch 7/15
+
+Epoch 7: val_accuracy did not improve from 0.79800
+63/63 - 99s - 2s/step - accuracy: 0.9910 - loss: 0.0715 - val_accuracy: 0.7790 - val_loss: 0.6797
+Epoch 8/15
+
+Epoch 8: val_accuracy improved from 0.79800 to 0.89700, saving model to ../models/run_elu\best_model.keras
+63/63 - 104s - 2s/step - accuracy: 0.9970 - loss: 0.0473 - val_accuracy: 0.8970 - val_loss: 0.3136
+Epoch 9/15
+
+Epoch 9: val_accuracy improved from 0.89700 to 0.96800, saving model to ../models/run_elu\best_model.keras
+63/63 - 104s - 2s/step - accuracy: 0.9970 - loss: 0.0346 - val_accuracy: 0.9680 - val_loss: 0.1575
+Epoch 10/15
+
+Epoch 10: val_accuracy did not improve from 0.96800
+63/63 - 100s - 2s/step - accuracy: 0.9950 - loss: 0.0387 - val_accuracy: 0.9350 - val_loss: 0.2242
+Epoch 11/15
+
+Epoch 11: val_accuracy did not improve from 0.96800
+63/63 - 98s - 2s/step - accuracy: 0.9960 - loss: 0.0359 - val_accuracy: 0.9280 - val_loss: 0.2345
+Epoch 12/15
+
+Epoch 12: val_accuracy improved from 0.96800 to 0.99500, saving model to ../models/run_elu\best_model.keras
+63/63 - 103s - 2s/step - accuracy: 0.9970 - loss: 0.0287 - val_accuracy: 0.9950 - val_loss: 0.0525
+Epoch 13/15
+
+Epoch 13: val_accuracy improved from 0.99500 to 0.99900, saving model to ../models/run_elu\best_model.keras
+63/63 - 104s - 2s/step - accuracy: 0.9980 - loss: 0.0300 - val_accuracy: 0.9990 - val_loss: 0.0271
+Epoch 14/15
+
+Epoch 14: val_accuracy did not improve from 0.99900
+63/63 - 101s - 2s/step - accuracy: 0.9970 - loss: 0.0233 - val_accuracy: 0.9960 - val_loss: 0.0433
+Epoch 15/15
+
+Epoch 15: val_accuracy did not improve from 0.99900
+63/63 - 99s - 2s/step - accuracy: 0.9960 - loss: 0.0290 - val_accuracy: 0.9950 - val_loss: 0.0433
+Restoring model weights from the end of the best epoch: 13.
+Done. Final model saved at: ../models/run_elu\model_final.keras
+--- EXIT CODE: 0 ---
+
+--- RUN run_selu @ 2025-06-11 00:45:07.639774 ---
+COMMAND: python train.py --mode train --features ../data/features --batch_size 16 --epochs 15 --model_dir ../models/run_selu --activation selu
+2025-06-11 00:45:08.709685: I tensorflow/core/util/port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2025-06-11 00:45:10.819581: I tensorflow/core/util/port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+C:\Users\macie\AppData\Local\Programs\Python\Python312\Lib\site-packages\keras\src\layers\convolutional\base_conv.py:107: UserWarning: Do not pass an `input_shape`/`input_dim` argument to a layer. When using Sequential models, prefer using an `Input(shape)` object as the first layer in the model instead.
+  super().__init__(activity_regularizer=activity_regularizer, **kwargs)
+2025-06-11 00:45:17.513876: I tensorflow/core/platform/cpu_feature_guard.cc:210] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: SSE3 SSE4.1 SSE4.2 AVX AVX2 AVX_VNNI FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+- TRAIN for 15 epochs | LR=0.0001 | act=selu
+C:\Users\macie\AppData\Local\Programs\Python\Python312\Lib\site-packages\keras\src\trainers\data_adapters\py_dataset_adapter.py:121: UserWarning: Your `PyDataset` class should call `super().__init__(**kwargs)` in its constructor. `**kwargs` can include `workers`, `use_multiprocessing`, `max_queue_size`. Do not pass these arguments to `fit()`, as they will be ignored.
+  self._warn_if_super_not_called()
+Epoch 1/15
+
+Epoch 1: val_accuracy improved from -inf to 0.12500, saving model to ../models/run_selu\best_model.keras
+63/63 - 114s - 2s/step - accuracy: 0.3960 - loss: 1.9124 - val_accuracy: 0.1250 - val_loss: 9.0036
+Epoch 2/15
+
+Epoch 2: val_accuracy improved from 0.12500 to 0.26400, saving model to ../models/run_selu\best_model.keras
+63/63 - 112s - 2s/step - accuracy: 0.7130 - loss: 0.8505 - val_accuracy: 0.2640 - val_loss: 2.3185
+Epoch 3/15
+
+Epoch 3: val_accuracy improved from 0.26400 to 0.80000, saving model to ../models/run_selu\best_model.keras
+63/63 - 119s - 2s/step - accuracy: 0.9200 - loss: 0.3093 - val_accuracy: 0.8000 - val_loss: 0.8058
+Epoch 4/15
+
+Epoch 4: val_accuracy improved from 0.80000 to 0.80800, saving model to ../models/run_selu\best_model.keras
+63/63 - 110s - 2s/step - accuracy: 0.9660 - loss: 0.1717 - val_accuracy: 0.8080 - val_loss: 0.6741
+Epoch 5/15
+
+Epoch 5: val_accuracy improved from 0.80800 to 0.89900, saving model to ../models/run_selu\best_model.keras
+63/63 - 111s - 2s/step - accuracy: 0.9710 - loss: 0.1318 - val_accuracy: 0.8990 - val_loss: 0.3279
+Epoch 6/15
+
+Epoch 6: val_accuracy improved from 0.89900 to 0.97900, saving model to ../models/run_selu\best_model.keras
+63/63 - 112s - 2s/step - accuracy: 0.9870 - loss: 0.0937 - val_accuracy: 0.9790 - val_loss: 0.1346
+Epoch 7/15
+
+Epoch 7: val_accuracy did not improve from 0.97900
+63/63 - 106s - 2s/step - accuracy: 0.9940 - loss: 0.0660 - val_accuracy: 0.9780 - val_loss: 0.0993
+Epoch 8/15
+
+Epoch 8: val_accuracy improved from 0.97900 to 0.99800, saving model to ../models/run_selu\best_model.keras
+63/63 - 113s - 2s/step - accuracy: 0.9980 - loss: 0.0393 - val_accuracy: 0.9980 - val_loss: 0.0215
+Epoch 9/15
+
+Epoch 9: val_accuracy did not improve from 0.99800
+63/63 - 107s - 2s/step - accuracy: 0.9970 - loss: 0.0359 - val_accuracy: 0.9970 - val_loss: 0.0342
+Epoch 10/15
+
+Epoch 10: val_accuracy improved from 0.99800 to 0.99900, saving model to ../models/run_selu\best_model.keras
+63/63 - 122s - 2s/step - accuracy: 0.9990 - loss: 0.0257 - val_accuracy: 0.9990 - val_loss: 0.0126
+Epoch 11/15
+
+Epoch 11: val_accuracy did not improve from 0.99900
+63/63 - 111s - 2s/step - accuracy: 0.9960 - loss: 0.0297 - val_accuracy: 0.9990 - val_loss: 0.0127
+Epoch 12/15
+
+Epoch 12: val_accuracy did not improve from 0.99900
+63/63 - 110s - 2s/step - accuracy: 0.9980 - loss: 0.0227 - val_accuracy: 0.9990 - val_loss: 0.0128
+Epoch 13/15
+
+Epoch 13: val_accuracy did not improve from 0.99900
+63/63 - 112s - 2s/step - accuracy: 0.9990 - loss: 0.0207 - val_accuracy: 0.9990 - val_loss: 0.0047
+Epoch 14/15
+
+Epoch 14: val_accuracy did not improve from 0.99900
+63/63 - 110s - 2s/step - accuracy: 0.9970 - loss: 0.0269 - val_accuracy: 0.9990 - val_loss: 0.0045
+Epoch 15/15
+
+Epoch 15: val_accuracy did not improve from 0.99900
+63/63 - 107s - 2s/step - accuracy: 0.9990 - loss: 0.0196 - val_accuracy: 0.9990 - val_loss: 0.0052
+Epoch 15: early stopping
+Restoring model weights from the end of the best epoch: 10.
+Done. Final model saved at: ../models/run_selu\model_final.keras
+--- EXIT CODE: 0 ---
+
+--- RUN run_gelu @ 2025-06-11 01:13:21.945887 ---
+COMMAND: python train.py --mode train --features ../data/features --batch_size 16 --epochs 15 --model_dir ../models/run_gelu --activation gelu
+2025-06-11 01:13:23.046783: I tensorflow/core/util/port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2025-06-11 01:13:25.592790: I tensorflow/core/util/port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+C:\Users\macie\AppData\Local\Programs\Python\Python312\Lib\site-packages\keras\src\layers\convolutional\base_conv.py:107: UserWarning: Do not pass an `input_shape`/`input_dim` argument to a layer. When using Sequential models, prefer using an `Input(shape)` object as the first layer in the model instead.
+  super().__init__(activity_regularizer=activity_regularizer, **kwargs)
+2025-06-11 01:13:34.100060: I tensorflow/core/platform/cpu_feature_guard.cc:210] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: SSE3 SSE4.1 SSE4.2 AVX AVX2 AVX_VNNI FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+- TRAIN for 15 epochs | LR=0.0001 | act=gelu
+C:\Users\macie\AppData\Local\Programs\Python\Python312\Lib\site-packages\keras\src\trainers\data_adapters\py_dataset_adapter.py:121: UserWarning: Your `PyDataset` class should call `super().__init__(**kwargs)` in its constructor. `**kwargs` can include `workers`, `use_multiprocessing`, `max_queue_size`. Do not pass these arguments to `fit()`, as they will be ignored.
+  self._warn_if_super_not_called()
+Epoch 1/15
+
+Epoch 1: val_accuracy improved from -inf to 0.11300, saving model to ../models/run_gelu\best_model.keras
+63/63 - 174s - 3s/step - accuracy: 0.3920 - loss: 1.8901 - val_accuracy: 0.1130 - val_loss: 4.0918
+Epoch 2/15
+
+Epoch 2: val_accuracy improved from 0.11300 to 0.35000, saving model to ../models/run_gelu\best_model.keras
+63/63 - 167s - 3s/step - accuracy: 0.7240 - loss: 0.8958 - val_accuracy: 0.3500 - val_loss: 2.3717
+Epoch 3/15
+
+Epoch 3: val_accuracy did not improve from 0.35000
+63/63 - 172s - 3s/step - accuracy: 0.8740 - loss: 0.4308 - val_accuracy: 0.3410 - val_loss: 2.1119
+Epoch 4/15
+
+Epoch 4: val_accuracy improved from 0.35000 to 0.36700, saving model to ../models/run_gelu\best_model.keras
+63/63 - 169s - 3s/step - accuracy: 0.9280 - loss: 0.2517 - val_accuracy: 0.3670 - val_loss: 1.8219
+Epoch 5/15
+
+Epoch 5: val_accuracy improved from 0.36700 to 0.47400, saving model to ../models/run_gelu\best_model.keras
+63/63 - 170s - 3s/step - accuracy: 0.9760 - loss: 0.1245 - val_accuracy: 0.4740 - val_loss: 1.5349
+Epoch 6/15
+
+Epoch 6: val_accuracy improved from 0.47400 to 0.61500, saving model to ../models/run_gelu\best_model.keras
+63/63 - 169s - 3s/step - accuracy: 0.9890 - loss: 0.0839 - val_accuracy: 0.6150 - val_loss: 1.1356
+Epoch 7/15
+
+Epoch 7: val_accuracy improved from 0.61500 to 0.72400, saving model to ../models/run_gelu\best_model.keras
+63/63 - 168s - 3s/step - accuracy: 0.9860 - loss: 0.0733 - val_accuracy: 0.7240 - val_loss: 0.6851
+Epoch 8/15
+
+Epoch 8: val_accuracy improved from 0.72400 to 0.91800, saving model to ../models/run_gelu\best_model.keras
+63/63 - 165s - 3s/step - accuracy: 0.9960 - loss: 0.0531 - val_accuracy: 0.9180 - val_loss: 0.2954
+Epoch 9/15
+
+Epoch 9: val_accuracy improved from 0.91800 to 0.95500, saving model to ../models/run_gelu\best_model.keras
+63/63 - 167s - 3s/step - accuracy: 0.9960 - loss: 0.0445 - val_accuracy: 0.9550 - val_loss: 0.1820
+Epoch 10/15
+
+Epoch 10: val_accuracy did not improve from 0.95500
+63/63 - 164s - 3s/step - accuracy: 0.9970 - loss: 0.0373 - val_accuracy: 0.9030 - val_loss: 0.2960
+Epoch 11/15
+
+Epoch 11: val_accuracy improved from 0.95500 to 0.97600, saving model to ../models/run_gelu\best_model.keras
+63/63 - 168s - 3s/step - accuracy: 0.9960 - loss: 0.0428 - val_accuracy: 0.9760 - val_loss: 0.1444
+Epoch 12/15
+
+Epoch 12: val_accuracy improved from 0.97600 to 0.98800, saving model to ../models/run_gelu\best_model.keras
+63/63 - 166s - 3s/step - accuracy: 0.9960 - loss: 0.0302 - val_accuracy: 0.9880 - val_loss: 0.1037
+Epoch 13/15
+
+Epoch 13: val_accuracy did not improve from 0.98800
+63/63 - 165s - 3s/step - accuracy: 0.9980 - loss: 0.0254 - val_accuracy: 0.9760 - val_loss: 0.1334
+Epoch 14/15
+
+Epoch 14: val_accuracy improved from 0.98800 to 0.99500, saving model to ../models/run_gelu\best_model.keras
+63/63 - 162s - 3s/step - accuracy: 0.9960 - loss: 0.0262 - val_accuracy: 0.9950 - val_loss: 0.0587
+Epoch 15/15
+
+Epoch 15: val_accuracy did not improve from 0.99500
+63/63 - 157s - 2s/step - accuracy: 0.9990 - loss: 0.0193 - val_accuracy: 0.9950 - val_loss: 0.0531
+Restoring model weights from the end of the best epoch: 14.
+Done. Final model saved at: ../models/run_gelu\model_final.keras
+--- EXIT CODE: 0 ---
+
+--- RUN run_bs8 @ 2025-06-11 01:55:27.534956 ---
+COMMAND: python train.py --mode train --features ../data/features --batch_size 8 --epochs 15 --model_dir ../models/run_bs8 --activation relu
+2025-06-11 01:55:28.791056: I tensorflow/core/util/port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2025-06-11 01:55:31.547234: I tensorflow/core/util/port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+C:\Users\macie\AppData\Local\Programs\Python\Python312\Lib\site-packages\keras\src\layers\convolutional\base_conv.py:107: UserWarning: Do not pass an `input_shape`/`input_dim` argument to a layer. When using Sequential models, prefer using an `Input(shape)` object as the first layer in the model instead.
+  super().__init__(activity_regularizer=activity_regularizer, **kwargs)
+2025-06-11 01:55:41.544195: I tensorflow/core/platform/cpu_feature_guard.cc:210] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: SSE3 SSE4.1 SSE4.2 AVX AVX2 AVX_VNNI FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+- TRAIN for 15 epochs | LR=0.0001 | act=relu
+C:\Users\macie\AppData\Local\Programs\Python\Python312\Lib\site-packages\keras\src\trainers\data_adapters\py_dataset_adapter.py:121: UserWarning: Your `PyDataset` class should call `super().__init__(**kwargs)` in its constructor. `**kwargs` can include `workers`, `use_multiprocessing`, `max_queue_size`. Do not pass these arguments to `fit()`, as they will be ignored.
+  self._warn_if_super_not_called()
+Epoch 1/15
+
+Epoch 1: val_accuracy improved from -inf to 0.30700, saving model to ../models/run_bs8\best_model.keras
+125/125 - 118s - 947ms/step - accuracy: 0.3610 - loss: 1.9418 - val_accuracy: 0.3070 - val_loss: 2.0966
+Epoch 2/15
+
+Epoch 2: val_accuracy improved from 0.30700 to 0.41800, saving model to ../models/run_bs8\best_model.keras
+125/125 - 111s - 887ms/step - accuracy: 0.6900 - loss: 0.9546 - val_accuracy: 0.4180 - val_loss: 1.9612
+Epoch 3/15
+
+Epoch 3: val_accuracy improved from 0.41800 to 0.59500, saving model to ../models/run_bs8\best_model.keras
+125/125 - 111s - 890ms/step - accuracy: 0.8530 - loss: 0.4800 - val_accuracy: 0.5950 - val_loss: 1.2468
+Epoch 4/15
+
+Epoch 4: val_accuracy improved from 0.59500 to 0.74500, saving model to ../models/run_bs8\best_model.keras
+125/125 - 109s - 875ms/step - accuracy: 0.9310 - loss: 0.2867 - val_accuracy: 0.7450 - val_loss: 0.7592
+Epoch 5/15
+
+Epoch 5: val_accuracy improved from 0.74500 to 0.93700, saving model to ../models/run_bs8\best_model.keras
+125/125 - 107s - 859ms/step - accuracy: 0.9690 - loss: 0.2021 - val_accuracy: 0.9370 - val_loss: 0.4073
+Epoch 6/15
+
+Epoch 6: val_accuracy improved from 0.93700 to 0.96100, saving model to ../models/run_bs8\best_model.keras
+125/125 - 111s - 890ms/step - accuracy: 0.9810 - loss: 0.1454 - val_accuracy: 0.9610 - val_loss: 0.3539
+Epoch 7/15
+
+Epoch 7: val_accuracy did not improve from 0.96100
+125/125 - 117s - 934ms/step - accuracy: 0.9730 - loss: 0.1460 - val_accuracy: 0.9090 - val_loss: 0.4485
+Epoch 8/15
+
+Epoch 8: val_accuracy did not improve from 0.96100
+125/125 - 107s - 859ms/step - accuracy: 0.9900 - loss: 0.1076 - val_accuracy: 0.9570 - val_loss: 0.4013
+Epoch 9/15
+
+Epoch 9: val_accuracy did not improve from 0.96100
+125/125 - 133s - 1s/step - accuracy: 0.9920 - loss: 0.0923 - val_accuracy: 0.9550 - val_loss: 0.4698
+Epoch 10/15
+
+Epoch 10: val_accuracy did not improve from 0.96100
+125/125 - 109s - 869ms/step - accuracy: 0.9930 - loss: 0.0902 - val_accuracy: 0.9420 - val_loss: 0.4217
+Epoch 11/15
+
+Epoch 11: val_accuracy improved from 0.96100 to 0.98400, saving model to ../models/run_bs8\best_model.keras
+125/125 - 112s - 893ms/step - accuracy: 0.9920 - loss: 0.0827 - val_accuracy: 0.9840 - val_loss: 0.2802
+Epoch 12/15
+
+Epoch 12: val_accuracy did not improve from 0.98400
+125/125 - 126s - 1s/step - accuracy: 0.9930 - loss: 0.0869 - val_accuracy: 0.9670 - val_loss: 0.3619
+Epoch 13/15
+
+Epoch 13: val_accuracy improved from 0.98400 to 0.98600, saving model to ../models/run_bs8\best_model.keras
+125/125 - 114s - 912ms/step - accuracy: 0.9910 - loss: 0.0804 - val_accuracy: 0.9860 - val_loss: 0.3095
+Epoch 14/15
+
+Epoch 14: val_accuracy did not improve from 0.98600
+125/125 - 106s - 851ms/step - accuracy: 0.9930 - loss: 0.0826 - val_accuracy: 0.9840 - val_loss: 0.3440
+Epoch 15/15
+
+Epoch 15: val_accuracy did not improve from 0.98600
+125/125 - 121s - 971ms/step - accuracy: 0.9980 - loss: 0.0609 - val_accuracy: 0.9800 - val_loss: 0.3165
+Restoring model weights from the end of the best epoch: 13.
+Done. Final model saved at: ../models/run_bs8\model_final.keras
+--- EXIT CODE: 0 ---
+
+--- RUN run_bs32 @ 2025-06-11 02:24:24.457411 ---
+COMMAND: python train.py --mode train --features ../data/features --batch_size 32 --epochs 15 --model_dir ../models/run_bs32 --activation relu
+2025-06-11 02:24:25.813858: I tensorflow/core/util/port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2025-06-11 02:24:28.501212: I tensorflow/core/util/port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+C:\Users\macie\AppData\Local\Programs\Python\Python312\Lib\site-packages\keras\src\layers\convolutional\base_conv.py:107: UserWarning: Do not pass an `input_shape`/`input_dim` argument to a layer. When using Sequential models, prefer using an `Input(shape)` object as the first layer in the model instead.
+  super().__init__(activity_regularizer=activity_regularizer, **kwargs)
+2025-06-11 02:24:36.405197: I tensorflow/core/platform/cpu_feature_guard.cc:210] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: SSE3 SSE4.1 SSE4.2 AVX AVX2 AVX_VNNI FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+- TRAIN for 15 epochs | LR=0.0001 | act=relu
+C:\Users\macie\AppData\Local\Programs\Python\Python312\Lib\site-packages\keras\src\trainers\data_adapters\py_dataset_adapter.py:121: UserWarning: Your `PyDataset` class should call `super().__init__(**kwargs)` in its constructor. `**kwargs` can include `workers`, `use_multiprocessing`, `max_queue_size`. Do not pass these arguments to `fit()`, as they will be ignored.
+  self._warn_if_super_not_called()
+Epoch 1/15
+
+Epoch 1: val_accuracy improved from -inf to 0.12200, saving model to ../models/run_bs32\best_model.keras
+32/32 - 102s - 3s/step - accuracy: 0.3730 - loss: 2.0628 - val_accuracy: 0.1220 - val_loss: 11.5582
+Epoch 2/15
+
+Epoch 2: val_accuracy improved from 0.12200 to 0.20200, saving model to ../models/run_bs32\best_model.keras
+32/32 - 98s - 3s/step - accuracy: 0.6480 - loss: 1.0685 - val_accuracy: 0.2020 - val_loss: 3.8867
+Epoch 3/15
+
+Epoch 3: val_accuracy did not improve from 0.20200
+32/32 - 95s - 3s/step - accuracy: 0.7970 - loss: 0.6348 - val_accuracy: 0.1850 - val_loss: 3.2618
+Epoch 4/15
+
+Epoch 4: val_accuracy improved from 0.20200 to 0.23000, saving model to ../models/run_bs32\best_model.keras
+32/32 - 98s - 3s/step - accuracy: 0.9280 - loss: 0.3044 - val_accuracy: 0.2300 - val_loss: 7.6739
+Epoch 5/15
+
+Epoch 5: val_accuracy improved from 0.23000 to 0.32100, saving model to ../models/run_bs32\best_model.keras
+32/32 - 98s - 3s/step - accuracy: 0.9600 - loss: 0.1757 - val_accuracy: 0.3210 - val_loss: 8.1546
+Epoch 6/15
+
+Epoch 6: val_accuracy improved from 0.32100 to 0.35300, saving model to ../models/run_bs32\best_model.keras
+32/32 - 99s - 3s/step - accuracy: 0.9790 - loss: 0.1275 - val_accuracy: 0.3530 - val_loss: 6.1176
+Epoch 7/15
+
+Epoch 7: val_accuracy did not improve from 0.35300
+32/32 - 94s - 3s/step - accuracy: 0.9920 - loss: 0.0977 - val_accuracy: 0.3240 - val_loss: 5.4932
+Epoch 8/15
+
+Epoch 8: val_accuracy improved from 0.35300 to 0.37500, saving model to ../models/run_bs32\best_model.keras
+32/32 - 98s - 3s/step - accuracy: 0.9910 - loss: 0.0615 - val_accuracy: 0.3750 - val_loss: 4.0870
+Epoch 9/15
+
+Epoch 9: val_accuracy improved from 0.37500 to 0.40700, saving model to ../models/run_bs32\best_model.keras
+32/32 - 98s - 3s/step - accuracy: 0.9980 - loss: 0.0416 - val_accuracy: 0.4070 - val_loss: 2.9525
+Epoch 10/15
+
+Epoch 10: val_accuracy improved from 0.40700 to 0.48000, saving model to ../models/run_bs32\best_model.keras
+32/32 - 100s - 3s/step - accuracy: 0.9980 - loss: 0.0331 - val_accuracy: 0.4800 - val_loss: 2.1886
+Epoch 11/15
+
+Epoch 11: val_accuracy improved from 0.48000 to 0.52100, saving model to ../models/run_bs32\best_model.keras
+32/32 - 101s - 3s/step - accuracy: 0.9970 - loss: 0.0333 - val_accuracy: 0.5210 - val_loss: 1.6924
+Epoch 12/15
+
+Epoch 12: val_accuracy improved from 0.52100 to 0.58300, saving model to ../models/run_bs32\best_model.keras
+32/32 - 101s - 3s/step - accuracy: 0.9980 - loss: 0.0277 - val_accuracy: 0.5830 - val_loss: 1.5076
+Epoch 13/15
+
+Epoch 13: val_accuracy improved from 0.58300 to 0.65400, saving model to ../models/run_bs32\best_model.keras
+32/32 - 99s - 3s/step - accuracy: 0.9990 - loss: 0.0225 - val_accuracy: 0.6540 - val_loss: 1.0684
+Epoch 14/15
+
+Epoch 14: val_accuracy improved from 0.65400 to 0.77200, saving model to ../models/run_bs32\best_model.keras
+32/32 - 99s - 3s/step - accuracy: 1.0000 - loss: 0.0178 - val_accuracy: 0.7720 - val_loss: 0.7099
+Epoch 15/15
+
+Epoch 15: val_accuracy improved from 0.77200 to 0.81300, saving model to ../models/run_bs32\best_model.keras
+32/32 - 100s - 3s/step - accuracy: 0.9980 - loss: 0.0236 - val_accuracy: 0.8130 - val_loss: 0.6763
+Restoring model weights from the end of the best epoch: 15.
+Done. Final model saved at: ../models/run_bs32\model_final.keras
+--- EXIT CODE: 0 ---
+
+--- RUN run_smallFilt @ 2025-06-11 02:49:26.877739 ---
+COMMAND: python train.py --mode train --features ../data/features --batch_size 16 --epochs 15 --model_dir ../models/run_smallFilt --filters 16 32 64
+2025-06-11 02:49:28.229967: I tensorflow/core/util/port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2025-06-11 02:49:30.750203: I tensorflow/core/util/port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+C:\Users\macie\AppData\Local\Programs\Python\Python312\Lib\site-packages\keras\src\layers\convolutional\base_conv.py:107: UserWarning: Do not pass an `input_shape`/`input_dim` argument to a layer. When using Sequential models, prefer using an `Input(shape)` object as the first layer in the model instead.
+  super().__init__(activity_regularizer=activity_regularizer, **kwargs)
+2025-06-11 02:49:39.414984: I tensorflow/core/platform/cpu_feature_guard.cc:210] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: SSE3 SSE4.1 SSE4.2 AVX AVX2 AVX_VNNI FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+- TRAIN for 15 epochs | LR=0.0001 | act=relu
+C:\Users\macie\AppData\Local\Programs\Python\Python312\Lib\site-packages\keras\src\trainers\data_adapters\py_dataset_adapter.py:121: UserWarning: Your `PyDataset` class should call `super().__init__(**kwargs)` in its constructor. `**kwargs` can include `workers`, `use_multiprocessing`, `max_queue_size`. Do not pass these arguments to `fit()`, as they will be ignored.
+  self._warn_if_super_not_called()
+Epoch 1/15
+
+Epoch 1: val_accuracy improved from -inf to 0.10300, saving model to ../models/run_smallFilt\best_model.keras
+63/63 - 45s - 720ms/step - accuracy: 0.3570 - loss: 2.0887 - val_accuracy: 0.1030 - val_loss: 4.3601
+Epoch 2/15
+
+Epoch 2: val_accuracy improved from 0.10300 to 0.45400, saving model to ../models/run_smallFilt\best_model.keras
+63/63 - 66s - 1s/step - accuracy: 0.6220 - loss: 1.1000 - val_accuracy: 0.4540 - val_loss: 1.8521
+Epoch 3/15
+
+Epoch 3: val_accuracy improved from 0.45400 to 0.60400, saving model to ../models/run_smallFilt\best_model.keras
+63/63 - 43s - 678ms/step - accuracy: 0.8270 - loss: 0.5679 - val_accuracy: 0.6040 - val_loss: 1.1733
+Epoch 4/15
+
+Epoch 4: val_accuracy improved from 0.60400 to 0.72100, saving model to ../models/run_smallFilt\best_model.keras
+63/63 - 42s - 670ms/step - accuracy: 0.9170 - loss: 0.2919 - val_accuracy: 0.7210 - val_loss: 0.7832
+Epoch 5/15
+
+Epoch 5: val_accuracy did not improve from 0.72100
+63/63 - 39s - 612ms/step - accuracy: 0.9560 - loss: 0.2068 - val_accuracy: 0.6770 - val_loss: 0.7622
+Epoch 6/15
+
+Epoch 6: val_accuracy improved from 0.72100 to 0.86500, saving model to ../models/run_smallFilt\best_model.keras
+63/63 - 41s - 655ms/step - accuracy: 0.9730 - loss: 0.1456 - val_accuracy: 0.8650 - val_loss: 0.4265
+Epoch 7/15
+
+Epoch 7: val_accuracy improved from 0.86500 to 0.95300, saving model to ../models/run_smallFilt\best_model.keras
+63/63 - 40s - 641ms/step - accuracy: 0.9850 - loss: 0.1027 - val_accuracy: 0.9530 - val_loss: 0.2395
+Epoch 8/15
+
+Epoch 8: val_accuracy did not improve from 0.95300
+63/63 - 38s - 601ms/step - accuracy: 0.9880 - loss: 0.0762 - val_accuracy: 0.9460 - val_loss: 0.2366
+Epoch 9/15
+
+Epoch 9: val_accuracy improved from 0.95300 to 0.96900, saving model to ../models/run_smallFilt\best_model.keras
+63/63 - 40s - 641ms/step - accuracy: 0.9890 - loss: 0.0767 - val_accuracy: 0.9690 - val_loss: 0.1833
+Epoch 10/15
+
+Epoch 10: val_accuracy improved from 0.96900 to 0.98100, saving model to ../models/run_smallFilt\best_model.keras
+63/63 - 40s - 636ms/step - accuracy: 0.9960 - loss: 0.0552 - val_accuracy: 0.9810 - val_loss: 0.1473
+Epoch 11/15
+
+Epoch 11: val_accuracy improved from 0.98100 to 0.99300, saving model to ../models/run_smallFilt\best_model.keras
+63/63 - 40s - 639ms/step - accuracy: 0.9960 - loss: 0.0499 - val_accuracy: 0.9930 - val_loss: 0.1055
+Epoch 12/15
+
+Epoch 12: val_accuracy did not improve from 0.99300
+63/63 - 38s - 607ms/step - accuracy: 0.9960 - loss: 0.0473 - val_accuracy: 0.9900 - val_loss: 0.1174
+Epoch 13/15
+
+Epoch 13: val_accuracy did not improve from 0.99300
+63/63 - 38s - 605ms/step - accuracy: 0.9990 - loss: 0.0365 - val_accuracy: 0.9900 - val_loss: 0.1178
+Epoch 14/15
+
+Epoch 14: val_accuracy did not improve from 0.99300
+63/63 - 38s - 607ms/step - accuracy: 0.9970 - loss: 0.0394 - val_accuracy: 0.9930 - val_loss: 0.0961
+Epoch 15/15
+
+Epoch 15: val_accuracy did not improve from 0.99300
+63/63 - 39s - 620ms/step - accuracy: 0.9960 - loss: 0.0382 - val_accuracy: 0.9890 - val_loss: 0.1186
+Restoring model weights from the end of the best epoch: 11.
+Done. Final model saved at: ../models/run_smallFilt\model_final.keras
+--- EXIT CODE: 0 ---
+
+--- RUN run_bigFilt @ 2025-06-11 03:00:12.217305 ---
+COMMAND: python train.py --mode train --features ../data/features --batch_size 16 --epochs 15 --model_dir ../models/run_bigFilt --filters 64 128 256
+2025-06-11 03:00:12.750253: I tensorflow/core/util/port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2025-06-11 03:00:14.131589: I tensorflow/core/util/port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+C:\Users\macie\AppData\Local\Programs\Python\Python312\Lib\site-packages\keras\src\layers\convolutional\base_conv.py:107: UserWarning: Do not pass an `input_shape`/`input_dim` argument to a layer. When using Sequential models, prefer using an `Input(shape)` object as the first layer in the model instead.
+  super().__init__(activity_regularizer=activity_regularizer, **kwargs)
+2025-06-11 03:00:19.809004: I tensorflow/core/platform/cpu_feature_guard.cc:210] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: SSE3 SSE4.1 SSE4.2 AVX AVX2 AVX_VNNI FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+- TRAIN for 15 epochs | LR=0.0001 | act=relu
+C:\Users\macie\AppData\Local\Programs\Python\Python312\Lib\site-packages\keras\src\trainers\data_adapters\py_dataset_adapter.py:121: UserWarning: Your `PyDataset` class should call `super().__init__(**kwargs)` in its constructor. `**kwargs` can include `workers`, `use_multiprocessing`, `max_queue_size`. Do not pass these arguments to `fit()`, as they will be ignored.
+  self._warn_if_super_not_called()
+Epoch 1/15
+
+Epoch 1: val_accuracy improved from -inf to 0.12800, saving model to ../models/run_bigFilt\best_model.keras
+63/63 - 300s - 5s/step - accuracy: 0.3760 - loss: 1.9401 - val_accuracy: 0.1280 - val_loss: 6.6283
+Epoch 2/15
+
+Epoch 2: val_accuracy did not improve from 0.12800
+63/63 - 291s - 5s/step - accuracy: 0.6720 - loss: 0.9851 - val_accuracy: 0.1080 - val_loss: 11.5324
+Epoch 3/15
+
+Epoch 3: val_accuracy improved from 0.12800 to 0.26700, saving model to ../models/run_bigFilt\best_model.keras
+63/63 - 308s - 5s/step - accuracy: 0.8860 - loss: 0.4034 - val_accuracy: 0.2670 - val_loss: 5.5539
+Epoch 4/15
+
+Epoch 4: val_accuracy improved from 0.26700 to 0.39200, saving model to ../models/run_bigFilt\best_model.keras
+63/63 - 306s - 5s/step - accuracy: 0.9760 - loss: 0.1763 - val_accuracy: 0.3920 - val_loss: 1.8868
+Epoch 5/15
+
+Epoch 5: val_accuracy improved from 0.39200 to 0.51300, saving model to ../models/run_bigFilt\best_model.keras
+63/63 - 303s - 5s/step - accuracy: 0.9890 - loss: 0.0977 - val_accuracy: 0.5130 - val_loss: 1.3059
+Epoch 6/15
+
+Epoch 6: val_accuracy improved from 0.51300 to 0.69000, saving model to ../models/run_bigFilt\best_model.keras
+63/63 - 315s - 5s/step - accuracy: 0.9940 - loss: 0.0711 - val_accuracy: 0.6900 - val_loss: 0.7552
+Epoch 7/15
+
+Epoch 7: val_accuracy improved from 0.69000 to 0.76400, saving model to ../models/run_bigFilt\best_model.keras
+63/63 - 302s - 5s/step - accuracy: 0.9980 - loss: 0.0461 - val_accuracy: 0.7640 - val_loss: 0.5806
+Epoch 8/15
+
+Epoch 8: val_accuracy improved from 0.76400 to 0.86100, saving model to ../models/run_bigFilt\best_model.keras
+63/63 - 354s - 6s/step - accuracy: 0.9980 - loss: 0.0385 - val_accuracy: 0.8610 - val_loss: 0.4050
+Epoch 9/15
+
+Epoch 9: val_accuracy improved from 0.86100 to 0.92400, saving model to ../models/run_bigFilt\best_model.keras
+63/63 - 296s - 5s/step - accuracy: 0.9980 - loss: 0.0430 - val_accuracy: 0.9240 - val_loss: 0.2623
+Epoch 10/15
+
+Epoch 10: val_accuracy improved from 0.92400 to 0.97800, saving model to ../models/run_bigFilt\best_model.keras
+63/63 - 341s - 5s/step - accuracy: 1.0000 - loss: 0.0337 - val_accuracy: 0.9780 - val_loss: 0.1886
+Epoch 11/15
+
+Epoch 11: val_accuracy improved from 0.97800 to 0.98200, saving model to ../models/run_bigFilt\best_model.keras
+63/63 - 301s - 5s/step - accuracy: 0.9980 - loss: 0.0246 - val_accuracy: 0.9820 - val_loss: 0.1809
+Epoch 12/15
+
+Epoch 12: val_accuracy improved from 0.98200 to 0.99000, saving model to ../models/run_bigFilt\best_model.keras
+63/63 - 353s - 6s/step - accuracy: 0.9970 - loss: 0.0280 - val_accuracy: 0.9900 - val_loss: 0.1738
+Epoch 13/15
+
+Epoch 13: val_accuracy did not improve from 0.99000
+63/63 - 287s - 5s/step - accuracy: 0.9990 - loss: 0.0248 - val_accuracy: 0.9870 - val_loss: 0.1620
+Epoch 14/15
+
+Epoch 14: val_accuracy did not improve from 0.99000
+63/63 - 286s - 5s/step - accuracy: 0.9990 - loss: 0.0237 - val_accuracy: 0.9890 - val_loss: 0.1884
+Epoch 15/15
+
+Epoch 15: val_accuracy improved from 0.99000 to 0.99200, saving model to ../models/run_bigFilt\best_model.keras
+63/63 - 343s - 5s/step - accuracy: 0.9990 - loss: 0.0226 - val_accuracy: 0.9920 - val_loss: 0.1947
+Restoring model weights from the end of the best epoch: 15.
+Done. Final model saved at: ../models/run_bigFilt\model_final.keras
+--- EXIT CODE: 0 ---
+
+--- RUN run_dropHigh @ 2025-06-11 04:18:42.219099 ---
+COMMAND: python train.py --mode train --features ../data/features --batch_size 16 --epochs 15 --model_dir ../models/run_dropHigh --dropouts 0.3 0.3 0.3 0.6
+2025-06-11 04:18:43.741798: I tensorflow/core/util/port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2025-06-11 04:18:46.513420: I tensorflow/core/util/port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+C:\Users\macie\AppData\Local\Programs\Python\Python312\Lib\site-packages\keras\src\layers\convolutional\base_conv.py:107: UserWarning: Do not pass an `input_shape`/`input_dim` argument to a layer. When using Sequential models, prefer using an `Input(shape)` object as the first layer in the model instead.
+  super().__init__(activity_regularizer=activity_regularizer, **kwargs)
+2025-06-11 04:18:55.818021: I tensorflow/core/platform/cpu_feature_guard.cc:210] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: SSE3 SSE4.1 SSE4.2 AVX AVX2 AVX_VNNI FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+- TRAIN for 15 epochs | LR=0.0001 | act=relu
+C:\Users\macie\AppData\Local\Programs\Python\Python312\Lib\site-packages\keras\src\trainers\data_adapters\py_dataset_adapter.py:121: UserWarning: Your `PyDataset` class should call `super().__init__(**kwargs)` in its constructor. `**kwargs` can include `workers`, `use_multiprocessing`, `max_queue_size`. Do not pass these arguments to `fit()`, as they will be ignored.
+  self._warn_if_super_not_called()
+Epoch 1/15
+
+Epoch 1: val_accuracy improved from -inf to 0.12900, saving model to ../models/run_dropHigh\best_model.keras
+63/63 - 136s - 2s/step - accuracy: 0.3630 - loss: 2.1007 - val_accuracy: 0.1290 - val_loss: 4.5032
+Epoch 2/15
+
+Epoch 2: val_accuracy improved from 0.12900 to 0.37000, saving model to ../models/run_dropHigh\best_model.keras
+63/63 - 99s - 2s/step - accuracy: 0.5900 - loss: 1.2506 - val_accuracy: 0.3700 - val_loss: 2.4732
+Epoch 3/15
+
+Epoch 3: val_accuracy did not improve from 0.37000
+63/63 - 96s - 2s/step - accuracy: 0.7530 - loss: 0.7327 - val_accuracy: 0.3470 - val_loss: 3.1664
+Epoch 4/15
+
+Epoch 4: val_accuracy improved from 0.37000 to 0.46800, saving model to ../models/run_dropHigh\best_model.keras
+63/63 - 123s - 2s/step - accuracy: 0.8770 - loss: 0.4370 - val_accuracy: 0.4680 - val_loss: 2.1301
+Epoch 5/15
+
+Epoch 5: val_accuracy improved from 0.46800 to 0.58900, saving model to ../models/run_dropHigh\best_model.keras
+63/63 - 101s - 2s/step - accuracy: 0.9370 - loss: 0.2641 - val_accuracy: 0.5890 - val_loss: 1.8689
+Epoch 6/15
+
+Epoch 6: val_accuracy did not improve from 0.58900
+63/63 - 96s - 2s/step - accuracy: 0.9600 - loss: 0.1991 - val_accuracy: 0.5590 - val_loss: 1.5199
+Epoch 7/15
+
+Epoch 7: val_accuracy improved from 0.58900 to 0.78800, saving model to ../models/run_dropHigh\best_model.keras
+63/63 - 110s - 2s/step - accuracy: 0.9650 - loss: 0.1579 - val_accuracy: 0.7880 - val_loss: 0.9311
+Epoch 8/15
+
+Epoch 8: val_accuracy improved from 0.78800 to 0.93100, saving model to ../models/run_dropHigh\best_model.keras
+63/63 - 100s - 2s/step - accuracy: 0.9770 - loss: 0.1249 - val_accuracy: 0.9310 - val_loss: 0.5955
+Epoch 9/15
+
+Epoch 9: val_accuracy did not improve from 0.93100
+63/63 - 97s - 2s/step - accuracy: 0.9870 - loss: 0.0992 - val_accuracy: 0.9150 - val_loss: 0.5767
+Epoch 10/15
+
+Epoch 10: val_accuracy improved from 0.93100 to 0.98500, saving model to ../models/run_dropHigh\best_model.keras
+63/63 - 101s - 2s/step - accuracy: 0.9900 - loss: 0.0767 - val_accuracy: 0.9850 - val_loss: 0.4839
+Epoch 11/15
+
+Epoch 11: val_accuracy did not improve from 0.98500
+63/63 - 97s - 2s/step - accuracy: 0.9940 - loss: 0.0703 - val_accuracy: 0.9690 - val_loss: 0.4811
+Epoch 12/15
+
+Epoch 12: val_accuracy did not improve from 0.98500
+63/63 - 96s - 2s/step - accuracy: 0.9970 - loss: 0.0551 - val_accuracy: 0.9610 - val_loss: 0.5291
+Epoch 13/15
+
+Epoch 13: val_accuracy did not improve from 0.98500
+63/63 - 97s - 2s/step - accuracy: 0.9930 - loss: 0.0538 - val_accuracy: 0.9820 - val_loss: 0.4552
+Epoch 14/15
+
+Epoch 14: val_accuracy improved from 0.98500 to 0.98600, saving model to ../models/run_dropHigh\best_model.keras
+63/63 - 101s - 2s/step - accuracy: 0.9960 - loss: 0.0431 - val_accuracy: 0.9860 - val_loss: 0.4571
+Epoch 15/15
+
+Epoch 15: val_accuracy improved from 0.98600 to 0.99300, saving model to ../models/run_dropHigh\best_model.keras
+63/63 - 100s - 2s/step - accuracy: 0.9910 - loss: 0.0503 - val_accuracy: 0.9930 - val_loss: 0.4036
+Restoring model weights from the end of the best epoch: 15.
+Done. Final model saved at: ../models/run_dropHigh\model_final.keras
+--- EXIT CODE: 0 ---
+
+=== BATCH END @ 2025-06-11 04:45:01.701122 ===

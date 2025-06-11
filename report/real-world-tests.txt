@@ -1,0 +1,71 @@
+Test #1:
+Said The Sky - "Legacy"
+is: EDM
+predictions:
+- After: edm (97.1% confidence)
+- Before: edm (94.6% confidence)
+- Middle: edm (94.0% confidence)
+
+Test #2:
+Said The Sky - "Reminisce"
+is: Pop-EDM
+predictions:
+- After: edm (91.5% confidence)
+- Before: edm (86.2% confidence)
+- Middle: pop (61.3% confidence)
+
+Test #3:
+Gryffin, Illenium - "Feel Good"
+is: EDM
+predictions:
+- After: edm (99.4% confidence)
+- Before: edm (94.9% confidence)
+- Middle: pop (86.9% confidence)
+
+Test #4:
+John Denver - "Take Me Home, Country Roads"
+is: Country
+predictions:
+- Before: rock (77.3% confidence)
+- Middle: country (52.5% confidence)
+- After: country (50.2% confidence)
+
+Test #5:
+One Direction - "18"
+is: Pop
+predictions:
+- After: edm (97.9% confidence)
+- Before: edm (46.0% confidence)
+- Middle: pop (29.9% confidence)
+
+Test #6:
+Knox - "Girl On The Internet"
+is: Electonic Rock
+predictions:
+- Middle: edm (87.1% confidence)
+- After: edm (65.1% confidence)
+- Before: pop (42.4% confidence)
+
+Test #7:
+ILLENIUM - "Crawl Outta Love"
+is: EDM
+predictions:
+- Before: edm (98.7% confidence)
+- After: edm (85.7% confidence)
+- Middle: edm (60.9% confidence)
+
+Test #8:
+The Beatles - "Let It Be"
+is: Rock
+predictions:
+- Middle: rock (81.0% confidence)
+- Before: edm (71.9% confidence)
+- After: classical (56.3% confidence)
+
+Test #9:
+"Fly Me To The Moon"
+is: Jazz
+predictions:
+- Middle: hiphop (45.3% confidence)
+- After: pop (27.4% confidence)
+- Before: classical (23.4% confidence)
